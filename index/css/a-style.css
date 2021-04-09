@@ -1,0 +1,85 @@
+.ColumnDisplay {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    box-sizing: border-box;   
+    color:hsl(170, 75%, 13%, 100%);
+    border: 5px solid hsl(170, 75%, 13%, 100%);
+    padding: 10px;
+  }
+.Gradients, .RGBA, .HSL, .HSLA, .pagination div, .TextHandling,#style li > div, 
+#style p ~ ul p, #style li:nth-of-type(2) + li, #sudo [class$="top"], #sudo [class|="top"]  {
+    padding: 10px 20px;
+}
+.Gradients, .RGBA, .HSL, .HSLA, .pagination, .TextHandling,#style li > div, #style p ~ ul p,
+#style li:nth-of-type(2) + li, #sudo [class$="top"], #sudo [class|="top"] {
+    margin: 10px 0;
+    display: inline-block;
+    color: white;
+    width: calc(100% - 40px);
+    vertical-align: bottom;
+}
+.Gradients {
+    background-image: linear-gradient(to bottom right, #083931, #031c18);
+    border-radius: 10px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.HSL {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(8, 57, 49,.3);
+    background-color: hsl(170, 75%, 13%);
+}
+.HSLA {
+    background-color: hsl(170, 75%, 13%, 100%);
+    outline: 2px solid rgb(8, 57, 49);
+    outline-offset: 5px;
+}
+#style li > div,#style li:nth-of-type(2) + li,#style p ~ ul p, #sudo [class$="top"], #sudo [class|="top"] {
+    background-color: hsl(170, 75%, 13%);
+}
+li strong {
+    margin: 10px 0;
+    display: inline-block;
+    color: #083931;
+}
+.pagination div {
+    color: rgb(8, 57, 49);
+    float: left;
+    transition: background-color .3s;
+    border: 1px solid #ebebe9;
+}
+.pagination div:hover:nth-of-type(2), .pagination div:hover:nth-of-type(3) {
+    background-color: #ebebe9;
+    opacity: .5;
+}
+.RGBA {
+    background-color:rgba(8, 57, 49,1);
+    font-family: 'Libre Baskerville', serif;
+}
+#sudo li p {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    margin:0;
+}
+#sudo li p:nth-of-type(1)::after, #sudo li p:nth-of-type(3)::before{
+    border-right: 1px solid #083931;
+    content: "";
+    margin: 10px;
+}
+.TextHandling {
+    box-sizing: border-box;   
+    background-color: hsl(170, 75%, 13%, 100%);
+    max-width: 300px;
+    border-left: 30px solid #ebebe9;
+    border-right: 30px solid #ebebe9;
+}
+u {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0
+  }

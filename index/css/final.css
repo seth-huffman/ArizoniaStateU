@@ -1,0 +1,167 @@
+.ad-container {
+    padding: 5px 10px;
+    width: calc(468px - 20px);
+    height: calc(60px - 10px);
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url("../img/cereal.jpg");
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: absolute;
+}
+.ad-container .btn {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color: #683a16; 
+  text-transform: uppercase;
+  padding: 14px 20px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2.5px 40px;
+  animation: 1s ease-out 0s 1 slideLefttwo;
+  animation-fill-mode: forwards;
+  animation-delay:6s;
+  position: relative;
+  top: -96px;
+  left: -315px;
+}
+.ad-container .btn:hover {
+    background-color: #683a16;
+    color: white;
+}
+.ad-container h1, 
+.ad-container h2, 
+.ad-container h3, 
+.ad-container h4 {
+    margin: 0;
+    line-height: 1;
+    color: white;
+    font-style: normal;
+    font-family: Libre Franklin;
+}
+.ad-container h1 {
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 50px;
+    animation: 3s ease-in 0s 1 slideInFromTop;
+    animation-fill-mode: forwards;
+    animation-delay:3s;
+    position: relative;
+    top: -105px;
+    font-weight: bold;
+}
+.ad-container h2 {
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+}
+.ad-container h3 {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    margin-left: 15px;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+}
+.ad-container h4 {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    display: inline-block;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+    font-weight: normal;
+}
+.ad-container img {
+    animation: 3s ease-out 0s 1 slideLeft;
+    animation-delay:6s;
+    position: relative;
+    top: -96px;
+    left: -115px;
+    animation-fill-mode: forwards;
+}
+.popup-margin {
+    margin: 0 auto;
+    width: 468px
+}
+.popup-margin .close {
+	position: relative;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+.popup-margin .close:hover {
+	opacity: .5;
+}
+@keyframes slideInFromLeft {
+    0%, 100%{
+        opacity:0;
+        display: none
+	}
+	0% {
+        transform: translateX(-100%);
+	}
+	30%, 60% {
+        transform: translateX(0%);
+        opacity: 1;
+        display: block
+    }
+    100% {
+        transform: translateX(30%);
+    }
+}
+@keyframes slideInFromTop {
+	0% {
+        opacity:0;
+        top: -105px;
+	}
+	10%, 90% {
+        top: -48px;
+        opacity: 1;
+    }
+    100% {
+        opacity:0;
+        top: 105px;
+    }}
+@keyframes slideLeft {
+	0% {
+        opacity:0;
+        left: -105px;
+	}
+	40%, 100% {
+        left: 0;
+        opacity: 1;
+        
+    }
+}
+@keyframes slideLefttwo {
+	0% {
+        opacity:0;
+        left: -105px;
+	}
+	40%, 100% {
+        left: 14px;
+        opacity: 1;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+   html .ad-container {text-align: left}
+}
+
+
+
+
+

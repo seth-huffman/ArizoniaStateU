@@ -1,0 +1,38 @@
+
+.inline-photo {
+  /* opacity: 0;
+   -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg); 
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,               
+              margin-bottom 10px 
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform, opacity; */
+  -webkit-transform: translateY(var(--translateY));
+  -ms-transform: translateY(var(--translateY));
+  transform: translateY(var(--translateY));
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: -webkit-transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: transform 1s cubic-bezier(.25,.46,.45,.94),-webkit-transform 1s cubic-bezier(.25,.46,.45,.94);
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+}
+/* .card-parallax-img {
+  -webkit-transform: translateY(var(--translateY));
+  -ms-transform: translateY(var(--translateY));
+  transform: translateY(var(--translateY));
+  will-change: transform;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: -webkit-transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: transform 1s cubic-bezier(.25,.46,.45,.94);
+  transition: transform 1s cubic-bezier(.25,.46,.45,.94),-webkit-transform 1s cubic-bezier(.25,.46,.45,.94);} */
